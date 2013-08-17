@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='collective.behavior.localskin',
-    version='0.9.0',
+    version='0.9.1.dev0',
     description='Dexterity behavior to enable a local theme skin',
     long_description=(open('README.rst').read() + '\n' +
                       open('CHANGES.rst').read()),
