@@ -28,4 +28,4 @@ Dexterity behavior to enable a skin theme
 
 ----
 
-.. image:: 04-select-local-skin.png
+.. image:: 04-have-local-skin.png
