@@ -2,6 +2,12 @@
 collective.behavior.localskin
 ==============================
 
+.. image:: https://secure.travis-ci.org/plone/collective.behavior.localskin.png
+   :target: http://travis-ci.org/plone/collective.behavior.localskin
+
+.. image:: https://saucelabs.com/buildstatus/cblocalskin
+   :target: https://saucelabs.com/u/cblocalskin
+
 Dexterity behavior to enable a skin theme
 
 * relies in `collective.behavior.localregistry`_
