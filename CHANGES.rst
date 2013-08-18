@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.9.2 (unreleased)
+0.9.2 (2013-08-18)
 ------------------
 
-- Nothing changed yet.
-
+- Add screenshots
+  [Asko Soukka]
 
 0.9.1 (2013-08-18)
 ------------------
