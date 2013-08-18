@@ -3,7 +3,7 @@ collective.behavior.localskin
 ==============================
 
 .. image:: https://secure.travis-ci.org/plone/collective.behavior.localskin.png
-   :target: http://travis-ci.org/plone/collective.behavior.localskin
+   :target: https://travis-ci.org/datakurre/collective.behavior.localskin
 
 .. image:: https://saucelabs.com/buildstatus/cblocalskin
    :target: https://saucelabs.com/u/cblocalskin
