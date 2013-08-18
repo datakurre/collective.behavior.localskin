@@ -16,3 +16,6 @@ Dexterity behavior to enable a skin theme
 .. _collective.behavior.localregistry: http://pypi.python.org/pypi/collective.behavior.localregistry
 .. _collective.behavior.localdiazo: http://pypi.python.org/pypi/collective.behavior.localdiazo
 
+.. image:: 01-activate-behaviors.png
+.. image:: 02-create-microsite.png
+.. image:: 03-select-local-skin.png
