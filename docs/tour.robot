@@ -77,6 +77,7 @@ Select local skin
     ...    Finally, edit the type again to be able to select the local skin.
     ...    width=300  position=right
     Capture and crop page screenshot   03-select-local-skin.png  ${note}
+    ...    css=h1.documentFirstHeading
     ...    formfield-form-widgets-ILocalSkin-skinname
     ...    form-widgets-ILocalSkin-skinname
     ...    form-buttons-save
