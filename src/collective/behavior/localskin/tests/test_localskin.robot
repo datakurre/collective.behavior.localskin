@@ -35,6 +35,7 @@ New microsite with skin
     Click link  Edit
     Select from list  form-widgets-ILocalSkin-skinname  Plone Default
     Click button  Save
+    Page should contain  Changes saved
     Page source should contain  portal_css/Plone%20Default
 
 Page source should contain
@@ -71,7 +72,8 @@ MicroSite can have its own skin
       and at  ${PLONE_URL}/my-microsite/edit
      When select from list  form-widgets-ILocalSkin-skinname  Plone Default
       and click button  Save
-     Then page source should contain  portal_css/Plone%20Default
+     Then page should contain  Changes saved
+      and page source should contain  portal_css/Plone%20Default
       and page source should not contain  portal_css/Sunburst%20Theme
 
 MicroSite skin does not affect the main site skin
