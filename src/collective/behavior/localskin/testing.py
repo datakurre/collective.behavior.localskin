@@ -20,6 +20,18 @@ class CollectiveBehaviorLocalSkinLayer(PloneSandboxLayer):
     def setUpPloneSite(self, portal):
         self.applyProfile(portal, "plone.app.dexterity:default")
 
+        from plone.dexterity.fti import DexterityFTI
+        fti = DexterityFTI("MicroSite")
+        fti.title = u"MicroSite"
+        fti.klass = "plone.dexterity.content.Container"
+        fti.behaviors = (
+            "plone.app.dexterity.behaviors.metadata.IBasic",
+            "plone.app.content.interfaces.INameFromTitle",
+            "collective.behavior.localregistry.behavior.ILocalRegistry",
+            "collective.behavior.localskin.behavior.ILocalSkin",
+        )
+        portal.portal_types._setObject("MicroSite", fti)
+
     def testSetUp(self):
         # Invalidate Dexterity fti.lookupSchema() cache:
         import plone.dexterity.schema
