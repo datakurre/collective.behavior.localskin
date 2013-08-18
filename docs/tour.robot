@@ -82,4 +82,10 @@ Select local skin
     ...    form-widgets-ILocalSkin-skinname
     ...    form-buttons-save
 
-
+Have microsite with local skin
+    New microsite with skin  My MicroSite  Plone Default
+    Go to  ${PLONE_URL}/my-microsite
+    ${note} =  Add note
+    ...    css=h1.documentFirstHeading
+    ...    Enjoy!  width=60
+    Capture page screenshot  04-have-local-skin.png

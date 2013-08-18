@@ -25,3 +25,7 @@ Dexterity behavior to enable a skin theme
 ----
 
 .. image:: 03-select-local-skin.png
+
+----
+
+.. image:: 04-select-local-skin.png
