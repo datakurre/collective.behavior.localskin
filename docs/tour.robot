@@ -55,15 +55,15 @@ Activate behavior
     Go to  ${PLONE_URL}/dexterity-types/MicroSite/@@behaviors
     ${note} =  Add note
     ...    css=label[for="form-widgets-collective-behavior-localregistry-behavior-ILocalRegistry-0"]
-    ...    At first, enable both Local registry and Local skin theme -behaviors for your type.
-    ...    width=300  position=right
+    ...    At first, enable both Local registry and Local skin theme -behaviors for your new type.
+    ...    width=350  position=right
     Capture page screenshot  01-activate-behaviors.png
 
 Create microsite
     Go to  ${PLONE_URL}/++add++MicroSite
     ${note} =  Add note
     ...    form-buttons-save
-    ...    Then create and save a new content of your type.
+    ...    Then create and save a new container of your type.
     ...    width=350  position=right
     Capture and crop page screenshot   02-create-microsite.png  ${note}
     ...    css=h1.documentFirstHeading
@@ -74,7 +74,7 @@ Select local skin
     Go to  ${PLONE_URL}/my-microsite/edit
     ${note} =  Add note
     ...    form-widgets-ILocalSkin-skinname
-    ...    Finally, edit the type again to be able to select the local skin.
+    ...    Finally, edit the container again to be able to select the local skin.
     ...    width=300  position=right
     Capture and crop page screenshot   03-select-local-skin.png  ${note}
     ...    css=h1.documentFirstHeading
