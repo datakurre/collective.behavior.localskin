@@ -10,8 +10,8 @@ from zope.globalrequest import getRequest
 from zope.component import (
     adapter,
     getUtility,
-    queryUtility
-)
+    queryUtility,
+    ComponentLookupError)
 from zope.interface import (
     implements,
     implementer,
@@ -119,10 +119,10 @@ class LocalSkin(object):
 
 
 def change_skin(event):
-    registry = queryUtility(IRegistry, None)
-
-    # Skip undefined registry
-    if not registry:
+    # Skip when registry cannot be found
+    try:
+        registry = getUtility(IRegistry)
+    except ComponentLookupError:
         return
 
     # Skip global registry

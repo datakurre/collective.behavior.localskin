@@ -26,6 +26,7 @@ setup(
         'Products.CMFCore',
         'Zope2',
         'collective.behavior.localregistry',
+        'plone.app.dexterity',
         'plone.app.registry',
         'plone.behavior',
         'plone.registry',
