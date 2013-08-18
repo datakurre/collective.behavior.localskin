@@ -76,6 +76,6 @@ MicroSite can have its own skin
 
 MicroSite skin does not affect the main site skin
     Given new microsite with skin  My MicroSite  Plone Default
-    When go to  ${PLONE_URL}
-    Then page source should contain  portal_css/Sunburst%20Theme
-     and page source should not contain  portal_css/Plone%20Default
+     When go to  ${PLONE_URL}
+     Then page source should contain  portal_css/Sunburst%20Theme
+      and page source should not contain  portal_css/Plone%20Default
